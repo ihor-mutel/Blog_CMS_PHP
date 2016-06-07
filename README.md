@@ -14,14 +14,14 @@ git push origin master
 ```
 git clone [url]
 ```
-##Update local branch
+###Update local branch
 
-###Will fetch from the remote repository tracked to the current branch.
+Will fetch from the remote repository tracked to the current branch.
 ```
 git fetch
 ```
 ###Pull 
-###This has the effect of automatically updating the local repository to match the remote, while fetch will download the files but not update your local copies.
+This has the effect of automatically updating the local repository to match the remote, while fetch will download the files but not update your local copies.
 
 ```
 git pull
