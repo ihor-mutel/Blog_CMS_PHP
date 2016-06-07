@@ -1,5 +1,9 @@
 # Learn-PHP
 
+
+#learn git
+To learn more about github [GitHub](http://jameswillweb.github.io/github-for-web-designers/reference.html)
+
 ##Push repository
 
 ```
