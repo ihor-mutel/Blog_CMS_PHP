@@ -10,6 +10,12 @@ To learn more about github [GitHub](http://jameswillweb.github.io/github-for-web
 git remote add origin remote [repository URL]
 git push origin master
 ```
+
+Push current branch to remote repository
+```
+git push
+```
+
 ###Clone repository
 ```
 git clone [url]
