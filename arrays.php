@@ -6,7 +6,12 @@
 </head>
 <body>
 <?php
-$numberList = array();
+$numberList = array(267, "434", "<h1>hello</h1>");
+
+// echo $numberList (error)   
+
+echo $numberList[0];    
+    
 ?>
 </body>
 </html>
