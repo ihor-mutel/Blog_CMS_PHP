@@ -21,8 +21,9 @@ $NUMBer = 100;
 
 //string    
 $makingString = "100";   
+ 
     
-    
+echo $name . " " . $NUMBER;    
     
 ?>
         
