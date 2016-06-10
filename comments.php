@@ -6,8 +6,8 @@
 </head>
 <body>
 <?php
-//this function below displays text 
-
+/* this function below displays text 
+this is the second line */
 echo "hello Student";    
 ?>
 </body>
