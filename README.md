@@ -30,3 +30,20 @@ git pull
 ```
 git reset --hard HEAD~1
 ```
+
+###Branch
+
+Creates a new branch with the specified name.
+```
+git branch <name>
+```
+
+Displays a list of existing branches and indicates the current branch.
+```
+git branch
+```
+
+Creates a new branch with the specified name and checks it out so that it is the current branch.
+```
+git checkout -b <name>
+```
