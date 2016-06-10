@@ -9,6 +9,8 @@
 $name = "Edwin";
 $name2 = 'Edwin';
 $number = 100;
+    
+echo $name;    
 ?>
         
 </body>
