@@ -8,12 +8,13 @@
 <?php
 $number = array(10,"Maria",49); //array
 
-$names = array("first_name" => 'Edwin'); //assoc array
+$names = array("first_name" => 'Edwin',"last_name" => 'Diaz'); //assoc array
 
-print_r($number);
-echo "</br>";    
-print_r($names);    
+//print_r($number);
+//echo "</br>";    
+//print_r($names);    
 
+echo $names['first_name'];    
 //$names = [];  short version of arrays    
 ?>
 </body>
