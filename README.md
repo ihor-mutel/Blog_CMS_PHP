@@ -26,3 +26,7 @@ This has the effect of automatically updating the local repository to match the 
 ```
 git pull
 ```
+###Delete commit
+```
+git reset --hard HEAD~1
+```
