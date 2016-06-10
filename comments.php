@@ -6,7 +6,9 @@
 </head>
 <body>
 <?php
-    
+//this function below displays text 
+
+echo "hello Student";    
 ?>
 </body>
 </html>
