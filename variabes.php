@@ -5,7 +5,11 @@
     <title>Document</title>
 </head>
 <body>
-
+<?php
+$name = "Edwin";
+$name2 = 'Edwin';
+$number = 100;
+?>
         
 </body>
 </html>
