@@ -8,9 +8,7 @@
 <?php
 $numberList = array(267, "434", "<h1>hello</h1>");
 
-// echo $numberList (error)   
-
-echo $numberList[0];    
+print_r($numberList);
     
 ?>
 </body>
