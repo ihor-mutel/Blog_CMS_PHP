@@ -16,6 +16,12 @@ Push current branch to remote repository
 git push
 ```
 
+Push new branch to the repository
+
+```
+git push -u origin [Branch name]
+```
+
 ###Clone repository
 ```
 git clone [url]
