@@ -6,6 +6,19 @@
 </head>
 <body>
 <?php
+$x = "outside"; //global
+
+function convert(){
+
+$x = "inside";  //local
+
+}
+
+echo $x; //gives us "outside"
+echo "<br>";
+    
+convert(); //trying to convert 
+echo $x; //but still gives us "outside"
 
 ?>
 </body>
