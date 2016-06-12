@@ -9,7 +9,7 @@
 $x = "outside"; //global
 
 function convert(){
-
+global $x; //declare varible global
 $x = "inside";  //local
 
 }
@@ -18,7 +18,7 @@ echo $x; //gives us "outside"
 echo "<br>";
     
 convert(); //trying to convert 
-echo $x; //but still gives us "outside"
+echo $x; //and then gives us "inside"
 
 ?>
 </body>
