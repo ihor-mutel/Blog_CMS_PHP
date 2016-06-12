@@ -6,10 +6,13 @@
 </head>
 <body>
 <?php
-function greeting($message){
-    echo $message;
+function calculate($number1, $number2){
+    
+$sum = $number1 + $number2;    
+echo  $sum;
+    
 }
-greeting("Hello Student");
+calculate(48,48);
 ?>
 </body>
 </html>
