@@ -17,6 +17,10 @@ http://localhost/demo/Learn-PHP/
 git remote add origin remote [repository URL]
 git push origin master
 ```
+Force push
+```
+git push -f origin <branch>
+```
 
 Push current branch to remote repository
 ```
@@ -48,6 +52,10 @@ git pull
 ###Delete commit
 ```
 git reset --hard HEAD~1
+```
+Empty message
+```
+git commit -a --allow-empty-message -m ''
 ```
 
 ###Branch
