@@ -4,6 +4,8 @@
 #learn git
 To learn more about github [GitHub](http://jameswillweb.github.io/github-for-web-designers/reference.html)
 
+PHP Learning guide [PHP](https://drive.google.com/folderview?id=0B4VMIiiLs8e7RzRELXNLQjh0ZWc&usp=sharing)
+
 ###Push repository
 
 ```
