@@ -7,6 +7,10 @@
 <body>
 <?php
 
+function saySomething(){
+    echo "Hello student, do you like the class? okay great";
+}
+saySomething();
 ?>
 </body>
 </html>
