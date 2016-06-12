@@ -7,10 +7,19 @@
 <body>
 <?php
 
-function saySomething(){
-    echo "Hello student, do you like the class? okay great";
+function init(){
+    saySomething();
+    echo "<br>";
+    calculate();
 }
-saySomething();
+
+function calculate(){
+        echo 456 + 345;
+    }
+function saySomething(){
+        echo "Hello student, do you like the class? okay great";
+}
+init()
 ?>
 </body>
 </html>
