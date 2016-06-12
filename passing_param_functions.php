@@ -6,7 +6,10 @@
 </head>
 <body>
 <?php
-
+function greeting($message){
+    echo $message;
+}
+greeting("Hello Student");
 ?>
 </body>
 </html>
