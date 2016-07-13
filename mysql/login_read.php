@@ -8,7 +8,7 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
         die("Database connection failed");        
     }
     
-    $query = "";
+    $query = "SELECT * FROM users"; // * means all
     
     $result = mysqli_query($connection, $query);
     
@@ -33,7 +33,20 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
 <body>
 <div class="container">
     <div class="col-xs-6"> <!-- grid class -->
-
+    <?php
+    while($row = mysqli_fetch_assoc($result)){
+        
+        ?>
+        <pre>
+        <?php
+        print_r($row);
+        ?>        
+        </pre>
+        <?php
+    }
+    
+        
+    ?>
     </div>    
 </div>    
 </body>
