@@ -36,7 +36,12 @@
                 <label for="password">Password</label>
                 <input type="password" name="password" class="form-control">
             </div> 
-            <input class="btn btn-primary" type="submit" name="submit" value="Submit">        
+            <div class="form-group">
+                <select name="" id="">
+                    <option value="">id</option>
+                </select>
+            </div>
+            <input class="btn btn-primary" type="submit" name="submit" value="UPDATE">        
         </form>
     </div>      
 </div>    
