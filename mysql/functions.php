@@ -35,4 +35,23 @@ if(!$result){
    die('Query failed' . mysqli_error($connection));       
 }
 }
+
+function deleteRows(){
+global $connection; //inside of function is a local scope in order to bring variables from global scope we should use this
+$username = $_POST['username'];
+$password = $_POST['password'];
+$id = $_POST['id'];
+    
+$query = "UPDATE users SET ";
+$query .= "username = '$username', ";
+$query .= "password = '$password' ";
+$query .= "WHERE id = $id "; //choose which row to update, id without quotes because it's an integer
+
+
+$result = mysqli_query($connection, $query);
+
+if(!$result){
+   die('Query failed' . mysqli_error($connection));       
+}
+}
 ?>

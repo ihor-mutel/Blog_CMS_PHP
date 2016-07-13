@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) {
 <body>
 <div class="container">
     <div class="col-xs-6"> <!-- grid class -->
-        <form action="login_update.php" method="post">
+        <form action="login_delete.php" method="post">
            
             <div class="form-group">
                <label for="username">Username</label>
