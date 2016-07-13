@@ -1,4 +1,4 @@
 # Learn-PHP
 
 
-#how to create database through interface or sql commander and delete it watch "005 Creating a Database in PHPmyadmin"
+#how to create a table, check all checkboxes, add data into a table, and delete row or a whole table by using interface watch "006 Creating Tables and Inserting Data in PHPmyadmin"
