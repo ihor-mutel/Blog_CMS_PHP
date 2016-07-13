@@ -60,9 +60,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
-    if ($connection) {
-        echo "We are connected";        
-    }else {
+    if (!$connection) {
         die("Database connection failed");        
     }
     
@@ -73,6 +71,9 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
     
     if(!$result){
        die('Query failed' . mysqli_error());       
+    }else {
+        echo "Record created";
+        
     }
 }
 }
