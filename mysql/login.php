@@ -3,8 +3,14 @@ if(isset($_POST['submit'])) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-echo $username;
-echo $password;
+    if($username && $password) {
+        echo $username;
+        echo $password; 
+        
+    }else {
+        echo "this field cannot be blank";
+    }
+
 }
 ?>
 
