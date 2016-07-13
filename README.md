@@ -6,6 +6,11 @@ To learn more about github [GitHub](http://jameswillweb.github.io/github-for-web
 
 PHP Learning guide [PHP](https://drive.google.com/folderview?id=0B4VMIiiLs8e7RzRELXNLQjh0ZWc&usp=sharing)
 
+###Start lampp linux
+cd /opt/lampp
+sudo ./lampp start
+
+
 ###Brackets localhost
 ```
 http://localhost/demo/Learn-PHP/
