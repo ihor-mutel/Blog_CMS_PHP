@@ -38,7 +38,7 @@ if(isset($_POST['submit'])) {
                    
                 </select>
             </div>
-            <input class="btn btn-primary" type="submit" name="submit" value="UPDATE">        
+            <input class="btn btn-primary" type="submit" name="submit" value="DELETE">        
         </form>
     </div>      
 </div>    
