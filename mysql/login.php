@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="col-xs-6"> <!-- grid class -->
-        <form action="">
+        <form action="login.php" method="post">
            
             <div class="form-group">
                <label for="username">Username</label>
