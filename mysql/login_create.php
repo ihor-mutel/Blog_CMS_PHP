@@ -27,7 +27,7 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
 <body>
 <div class="container">
     <div class="col-xs-6"> <!-- grid class -->
-        <form action="login.php" method="post">
+        <form action="login_create.php" method="post">
            
             <div class="form-group">
                <label for="username">Username</label>
