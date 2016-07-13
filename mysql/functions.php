@@ -18,6 +18,7 @@ echo "<option value='$id'>$id</option>";
 }
 
 function deleteRows(){
+if(isset($_POST['submit'])) {
 global $connection; //inside of function is a local scope in order to bring variables from global scope we should use this
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -31,10 +32,15 @@ $result = mysqli_query($connection, $query);
 
 if(!$result){
    die('Query failed' . mysqli_error($connection));       
+}else {
+        echo "Record deleted";
+        
+    }
 }
 }
 
 function updateTable(){
+if(isset($_POST['submit'])) {
 global $connection; //inside of function is a local scope in order to bring variables from global scope we should use this
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -50,6 +56,10 @@ $result = mysqli_query($connection, $query);
 
 if(!$result){
    die('Query failed' . mysqli_error($connection));       
+}else {
+        echo "Record updated";
+        
+    }
 }
 }
 
