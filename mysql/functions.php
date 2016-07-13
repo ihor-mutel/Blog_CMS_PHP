@@ -17,7 +17,7 @@ echo "<option value='$id'>$id</option>";
 }
 }
 
-function updateTable(){
+function deleteRows(){
 global $connection; //inside of function is a local scope in order to bring variables from global scope we should use this
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -34,7 +34,7 @@ if(!$result){
 }
 }
 
-function deleteRows(){
+function updateTable(){
 global $connection; //inside of function is a local scope in order to bring variables from global scope we should use this
 $username = $_POST['username'];
 $password = $_POST['password'];
