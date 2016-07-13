@@ -9,6 +9,15 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
     }else {
         die("Database connection failed");        
     }
+    
+    $query = "INSERT INTO users(username,password) "; // username and password column 
+    $query .= "VALUES ('$username', '$password') ";
+    
+    $result = mysqli_query($connection, $query);
+    
+    if(!$result){
+       die('Query failed' . mysqli_error());       
+    }
 }
 ?>
 
