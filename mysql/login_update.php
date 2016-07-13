@@ -1,4 +1,4 @@
-<?php include "db.php"; ?>
+
 <?php include "functions.php"; ?>
 
 
@@ -26,7 +26,7 @@
                 <input type="password" name="password" class="form-control">
             </div> 
             <div class="form-group">
-                <select name="" id="">
+                <select name="id" id="">
                     <?php
                          showAllData();
                     ?>                  
