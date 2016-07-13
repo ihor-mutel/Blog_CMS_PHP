@@ -38,7 +38,14 @@
             </div> 
             <div class="form-group">
                 <select name="" id="">
-                    <option value="">id</option>
+                    <?php
+                        while($row = mysqli_fetch_assoc($result)){  
+                        $id = $row['id'];    
+                        echo "<option value='$id'>$id</option>";
+                        }
+                    ?>
+                   
+                   
                 </select>
             </div>
             <input class="btn btn-primary" type="submit" name="submit" value="UPDATE">        
