@@ -1,8 +1,8 @@
-<?php include "db.php";
-include "functions.php";
+<?php include "db.php"; ?>
+<?php include "functions.php"; ?>
 
 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,12 +28,8 @@ include "functions.php";
             <div class="form-group">
                 <select name="" id="">
                     <?php
-                        while($row = mysqli_fetch_assoc($result)){  
-                        $id = $row['id'];    
-                        echo "<option value='$id'>$id</option>";
-                        }
-                    ?>
-                   
+                         showAllData();
+                    ?>                  
                    
                 </select>
             </div>
