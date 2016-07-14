@@ -87,6 +87,9 @@ if(isset($_POST['submit'])) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+$username = mysqli_real_escape_string($connection,$username); //clean sql injection   
+$password = mysqli_real_escape_string($connection,$password);
+    
 $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
     if (!$connection) {
         die("Database connection failed");        
