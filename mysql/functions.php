@@ -89,6 +89,11 @@ $password = $_POST['password'];
 
 $username = mysqli_real_escape_string($connection,$username); //clean sql injection   
 $password = mysqli_real_escape_string($connection,$password);
+
+$hashFormat = "$2y$10$";
+$salt = "kjhgtogvfeqrttyjhscv22";
+$hashF_and_salt = $hashFormat . $salt;
+$password = crypt($password, $hashF_and_salt);
     
 $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
     if (!$connection) {
