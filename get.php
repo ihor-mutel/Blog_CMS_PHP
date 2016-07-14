@@ -1,3 +1,9 @@
+<?php
+print_r($_GET); //information tou receive using links
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +11,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+<?php 
+$id = 10;
+$button = "CLICK HERE";
+?>
+<a href="get.php?id=<?php echo $id;?>"><?php echo $button ?></a>    
 </body>
 </html>
