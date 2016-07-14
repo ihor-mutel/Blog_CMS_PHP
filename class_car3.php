@@ -14,7 +14,7 @@ class Car {
 }
 $bmw = new Car(); //make an object
 $truck  = new Car(); 
-echo $bmw->wheels . "<br>"; //call the method which assign value to a variable in an object
+echo $bmw->wheels . "<br>"; 
 
 echo $truck->wheels = 10 . "<br>"; //a truck has another amount of wheels
 $truck->CreateDoors(); //call a method
