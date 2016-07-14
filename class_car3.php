@@ -8,9 +8,15 @@ class Car {
     function MoveWheels(){
             $this->wheels = 10;
     }
+    function CreateDoors(){
+            $this->doors = 6;
+    }
 }
 $bmw = new Car(); //make an object
-$bmw->MoveWheels(); //call a method
-//$bmw->wheels = 8; //assing a value
-echo $bmw->wheels; //call the method which assign value to a variable in an object
+$truck  = new Car(); 
+echo $bmw->wheels . "<br>"; //call the method which assign value to a variable in an object
+
+echo $truck->wheels = 10 . "<br>"; //a truck has another amount of wheels
+$truck->CreateDoors(); //call a method
+echo $truck->doors;  //display a value
 ?>
