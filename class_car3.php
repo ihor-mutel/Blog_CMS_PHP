@@ -6,10 +6,11 @@ class Car {
     var $engine = 1;
     var $doors = 4;
     function MoveWheels(){
-            echo "Wheels move";
+            $this->wheels = 10;
     }
 }
 $bmw = new Car(); //make an object
-$bmw->wheels = 8; //assing a value
-echo $bmw->wheels;
+$bmw->MoveWheels(); //call a method
+//$bmw->wheels = 8; //assing a value
+echo $bmw->wheels; //call the method which assign value to a variable in an object
 ?>
