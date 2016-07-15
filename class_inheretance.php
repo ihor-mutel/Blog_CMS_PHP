@@ -13,10 +13,14 @@ class Car {
     }
 }
 $bmw = new Car(); //make an object
-$truck  = new Car(); 
-echo $bmw->wheels . "<br>"; 
 
-echo $truck->wheels = 10 . "<br>"; //a truck has another amount of wheels
-$truck->CreateDoors(); //call a method
-echo $truck->doors;  //display a value
+class Plane{
+    
+}
+
+if(class_exists("Plane")){
+    echo "it does";
+}
+
+
 ?>
