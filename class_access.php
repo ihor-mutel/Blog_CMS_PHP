@@ -1,22 +1,31 @@
 <?php
 
 class Car {
-    var $wheels = 4;
-    var $hood = 1;
-    var $engine = 1;
+    public $wheels = 4; //it is available
+    protected $hood = 1; //only available for this class or subclasses
+    private $engine = 1; //only available for this class
     var $doors = 4;
-    function MoveWheels(){
-            $this->wheels = 10;
+    function ShowProperty(){
+         echo $this->hood;
+         echo $this->engine; // gives us engine
     }
-    function CreateDoors(){
-            $this->doors = 6;
+
+}
+class Semi extends Car {
+    function ShowProperty(){
+         echo $this->hood; // gives us hood
+         //echo $this->engine; // gives us error because "protected" doesn't work in subclasses
     }
+    
 }
 $bmw = new Car(); //make an object
-$truck  = new Car(); 
-echo $bmw->wheels . "<br>"; 
+$semi = new Semi(); //make an object
 
-echo $truck->wheels = 10 . "<br>"; //a truck has another amount of wheels
-$truck->CreateDoors(); //call a method
-echo $truck->doors;  //display a value
+//echo $bmw->wheels; //gives us wheels
+//echo $bmw->hood; //gives us error
+//$bmw->ShowProperty();  //gives us hood
+
+$bmw->ShowProperty(); //gives us hood and engine from class class Car
+$semi->ShowProperty();  //gives us hood from class class subclass Semi
+
 ?>
