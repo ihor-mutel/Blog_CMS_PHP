@@ -15,11 +15,11 @@ class Car {
 $bmw = new Car(); //make an object
 
 class Plane extends Car{ // plane inherit a car 
-    
+    var $wheels = 20; //reassign wheels
 }
 
 $jet = new Plane(); 
-$jet->MoveWheels(); //move wheels of object a car
+//$jet->MoveWheels(); //move wheels of object a car
 echo $jet->wheels; //but if call value of $jet we're able to call wheels from a car
 
 
