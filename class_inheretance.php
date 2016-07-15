@@ -14,13 +14,13 @@ class Car {
 }
 $bmw = new Car(); //make an object
 
-class Plane{
+class Plane extends Car{ // plane inherit a car 
     
 }
 
-if(class_exists("Plane")){
-    echo "it does";
-}
+$jet = new Plane(); 
+$jet->MoveWheels(); //move wheels of object a car
+echo $jet->wheels; //but if call value of $jet we're able to call wheels from a car
 
 
 ?>
