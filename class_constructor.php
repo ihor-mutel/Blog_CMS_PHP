@@ -5,18 +5,10 @@ class Car {
     var $hood = 1;
     var $engine = 1;
     var $doors = 4;
-    function MoveWheels(){
-            $this->wheels = 10;
-    }
-    function CreateDoors(){
-            $this->doors = 6;
+    function __construct(){
+            echo $this->wheels = 10;
     }
 }
 $bmw = new Car(); //make an object
-$truck  = new Car(); 
-echo $bmw->wheels . "<br>"; 
 
-echo $truck->wheels = 10 . "<br>"; //a truck has another amount of wheels
-$truck->CreateDoors(); //call a method
-echo $truck->doors;  //display a value
 ?>
