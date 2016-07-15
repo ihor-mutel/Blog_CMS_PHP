@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+003 Adding our assets  working structure.<!DOCTYPE html>
 <html lang="en">
 
 <head>
