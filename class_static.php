@@ -1,22 +1,16 @@
 <?php
 
 class Car {
-    var $wheels = 4;
+    static $wheels = 4;
     var $hood = 1;
-    var $engine = 1;
-    var $doors = 4;
+
     function MoveWheels(){
-            $this->wheels = 10;
-    }
-    function CreateDoors(){
-            $this->doors = 6;
+            Car::$wheels = 10;
     }
 }
 $bmw = new Car(); //make an object
-$truck  = new Car(); 
-echo $bmw->wheels . "<br>"; 
-
-echo $truck->wheels = 10 . "<br>"; //a truck has another amount of wheels
-$truck->CreateDoors(); //call a method
-echo $truck->doors;  //display a value
+//echo $bmw->wheels; //gives us error because we can't call static property from an instance
+Car::MoveWheels(); //call any static data from the class use ::
+echo Car::$wheels; //it's attached to a class not to an instance
+    
 ?>
