@@ -42,7 +42,7 @@ $select_all_posts_query = mysqli_query($connection,$query);
                 <hr>
 
                 <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                <img class="img-responsive" src="images/<?php echo $post_image; ?>" alt="">
 
                 <hr>
         
