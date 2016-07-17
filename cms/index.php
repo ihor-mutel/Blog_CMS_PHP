@@ -17,25 +17,24 @@ $query = "SELECT * FROM posts";
 $select_all_posts_query = mysqli_query($connection,$query);
     while ($row =  mysqli_fetch_assoc($select_all_posts_query)){
         $post_title = $row['post_title'];
-        $post_autor = $row['post_autor'];
+        $post_author = $row['post_author'];
         $post_date = $row['post_date'];
         $post_image = $row['post_image'];
         $post_content = $row['post_content'];
+        ?>
 
-    }  
-?>
-               
-                <!-- Blog Post -->
+               <!-- Blog Post -->
 
                 <!-- Title -->
-                <h1>Blog Post Title</h1>
-
-                <!-- Author -->
-                <p class="lead">
-                    by <a href="#">Start Bootstrap</a>
-                </p>
-
+                <h1>Page Heading</h1>
                 <hr>
+                <!-- Author -->
+                <h2>
+                    <a href="index.php"><?php echo $post_title; ?></a>
+                </h2>
+                <p class="lead">
+                    by <a href="index.php"><?php echo $post_author; ?></a>
+                </p>
 
                 <!-- Date/Time -->
                 <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
@@ -46,7 +45,17 @@ $select_all_posts_query = mysqli_query($connection,$query);
                 <img class="img-responsive" src="http://placehold.it/900x300" alt="">
 
                 <hr>
-
+        
+                 <!-- Post Content -->
+                <p class="lead"><?php echo $post_content; ?></p>
+                <a href="" class="btn btn-primary">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <hr>               
+                        
+<?php                                                                        
+    }  
+?>
+               
+ 
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
