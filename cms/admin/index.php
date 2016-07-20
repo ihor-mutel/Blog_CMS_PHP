@@ -1,5 +1,6 @@
 <?php include "includes/header.php" ?>
             <div id="wrapper">
+
         <!-- Navigation -->
 <?php include "includes/navigation.php" ?>
         <div id="page-wrapper">
@@ -11,7 +12,7 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             Welcome to Admin Page
-                            <small>Subheading</small>
+                            <small>Author</small>
                         </h1>
                     </div>
                 </div>
