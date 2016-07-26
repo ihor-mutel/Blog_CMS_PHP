@@ -28,7 +28,7 @@
                         <div class="col-xs-6">
 <?php                   
     $query = "SELECT * FROM categories"; //you could limit it using "LIMIT"
-    $select_categories_sidebar = mysqli_query($connection,$query);
+    $select_categories = mysqli_query($connection,$query);
                    
 
 ?>
@@ -42,13 +42,16 @@
                             <tbody>
                                 <tr>
 <?php
-        while ($row =  mysqli_fetch_assoc($select_categories_sidebar)){
+        while ($row =  mysqli_fetch_assoc($select_categories)){
+        $cat_id = $row['cat_id']; // cat_id equals to a field in a database
         $cat_title = $row['cat_title'];
-        echo "<li><a href='#'>{$cat_title}</a></li>";
+        echo "<tr>";
+        echo "<td>{$cat_id}</td>";
+        echo "<td>{$cat_title}</td>";
+        echo "</tr>";
     } 
-?>                                   
-                                    <td>Baseball Category</td>
-                                    <td>Baseball Category</td>
+?>                    
+
                                 </tr>
                             </tbody>
                         </table>
