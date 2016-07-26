@@ -14,7 +14,16 @@
                             <small>Author</small>
                         </h1>
                         <div class="col-xs-6">
-                        <form action="">
+<?php
+if(isset($_POST['submit'])){
+echo "<h1>Hello</h1>";
+}
+                            
+?>
+                        
+                        
+
+                        <form action="" method="post">
                             <div class="form-group">
                                 <label for="cat_title">Add category</label>
                                 <input class="form-control" type="text" name="cat_title">
