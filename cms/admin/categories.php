@@ -26,6 +26,12 @@
                             
                         </div>
                         <div class="col-xs-6">
+<?php                   
+    $query = "SELECT * FROM categories"; //you could limit it using "LIMIT"
+    $select_categories_sidebar = mysqli_query($connection,$query);
+                   
+
+?>
                         <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
@@ -35,6 +41,12 @@
                             </thead>
                             <tbody>
                                 <tr>
+<?php
+        while ($row =  mysqli_fetch_assoc($select_categories_sidebar)){
+        $cat_title = $row['cat_title'];
+        echo "<li><a href='#'>{$cat_title}</a></li>";
+    } 
+?>                                   
                                     <td>Baseball Category</td>
                                     <td>Baseball Category</td>
                                 </tr>
