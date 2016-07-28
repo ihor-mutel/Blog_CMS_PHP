@@ -48,16 +48,7 @@ include "includes/update_categories.php";
                                 <tr>
 <?php findAllCategories();?>
 
-<?php //DELETE QUERY
-if(isset($_GET['delete'])) {
-    
-    $the_cat_id = $_GET['delete'];
-    $query = "DELETE FROM categories WHERE cat_id = {$the_cat_id} ";
-    $delete_query = mysqli_query($connection,$query);
-    header("Location: categories.php"); // refresh page
-}
-                                    
-?>
+<?php deleteCategories(); ?>
 
                                 </tr>
                             </tbody>
