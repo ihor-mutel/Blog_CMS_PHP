@@ -43,7 +43,15 @@ if($cat_title == "" || empty($cat_title)) {
                                 <input  class="btn btn-primary" type="submit" name="submit" value="Add Category">
                             </div>   
                         </form> 
-                            
+                          <form action="" method="post">
+                            <div class="form-group">
+                                <label for="cat_title">Add category</label>
+                                <input class="form-control" type="text" name="cat_title">
+                            </div>                            
+                            <div class="form-group">
+                                <input  class="btn btn-primary" type="submit" name="submit" value="Add Category">
+                            </div>   
+                        </form>                           
                         </div>
                         <div class="col-xs-6">
                         <table class="table table-bordered table-hover">
