@@ -13,12 +13,23 @@
                             Welcome to Admin Page
                             <small>Author</small>
                         </h1>
-
-                  
-                   
-                   
-                   
-                   
+        <?php
+        if(isset($_GET['source'])) {
+            $source = $_GET['source'];
+        }else {
+            $source = "";
+        }
+        switch($source) {
+                case '34';
+                echo "NICE 34";
+                break;
+                
+                default:
+                include "includes/view_all_posts.php";
+                break;
+                
+        }
+        ?>
                    
                     </div>
                 </div>
