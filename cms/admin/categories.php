@@ -45,11 +45,22 @@ if($cat_title == "" || empty($cat_title)) {
                         </form> 
                           <form action="" method="post">
                             <div class="form-group">
-                                <label for="cat_title">Add category</label>
+                                <label for="cat_title">Update category</label>
+                                
+                    <?php
+                     $query = "SELECT * FROM categories "; //you could limit it using "LIMIT"
+                    $select_categories = mysqli_query($connection,$query);    
+
+
+                    while ($row =  mysqli_fetch_assoc($select_categories)){
+                    $cat_id = $row['cat_id']; // cat_id equals to a field in a database
+                    $cat_title = $row['cat_title'];                               
+
+                    ?>
                                 <input class="form-control" type="text" name="cat_title">
                             </div>                            
                             <div class="form-group">
-                                <input  class="btn btn-primary" type="submit" name="submit" value="Add Category">
+                                <input  class="btn btn-primary" type="submit" name="submit" value="Update Category">
                             </div>   
                         </form>                           
                         </div>
@@ -75,6 +86,7 @@ if($cat_title == "" || empty($cat_title)) {
         echo "<td>{$cat_id}</td>";
         echo "<td>{$cat_title}</td>";
         echo "<td><a href='categories.php?delete={$cat_id}'>Delete</a></td>";
+        echo "<td><a href='categories.php?edit={$cat_id}'>Edit</a></td>";
         echo "</tr>";
     } 
 ?>
