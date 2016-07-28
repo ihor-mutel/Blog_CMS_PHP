@@ -29,7 +29,7 @@ insert_categories();
                                 <input  class="btn btn-primary" type="submit" name="submit" value="Add Category">
                             </div>   
                         </form> 
-<?php 
+<?php //UPDATE AND INCLUDE QUERY
 if (isset($_GET['edit'])) {
 $cat_id = $_GET['edit'];
 include "includes/update_categories.php";
@@ -46,23 +46,9 @@ include "includes/update_categories.php";
                             </thead>
                             <tbody>
                                 <tr>
-<?php   //FIND ALL CATEGORIES QUERY
-        $query = "SELECT * FROM categories"; //you could limit it using "LIMIT"
-        $select_categories = mysqli_query($connection,$query);    
-                                    
-                                    
-        while ($row =  mysqli_fetch_assoc($select_categories)){
-        $cat_id = $row['cat_id']; // cat_id equals to a field in a database
-        $cat_title = $row['cat_title'];
-        echo "<tr>";
-        echo "<td>{$cat_id}</td>";
-        echo "<td>{$cat_title}</td>";
-        echo "<td><a href='categories.php?delete={$cat_id}'>Delete</a></td>";
-        echo "<td><a href='categories.php?edit={$cat_id}'>Edit</a></td>";
-        echo "</tr>";
-    } 
-?>
-<?php
+<?php findAllCategories();?>
+
+<?php //DELETE QUERY
 if(isset($_GET['delete'])) {
     
     $the_cat_id = $_GET['delete'];
