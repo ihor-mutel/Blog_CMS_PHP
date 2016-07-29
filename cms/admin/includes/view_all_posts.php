@@ -43,15 +43,6 @@
     echo "</tr>";
     }
 ?>        
-            <td>10</td>
-            <td>Edwin Diaz</td>
-            <td>Bootstap Framework</td>
-            <td>Bootstap</td>
-            <td>Status</td>
-            <td>Image</td>
-            <td>Tags</td>
-            <td>Comments</td>
-            <td>Date</td>
         
     </tbody>
 </table>
