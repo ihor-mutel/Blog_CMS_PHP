@@ -24,7 +24,7 @@
                 include "includes/add_posts.php";
                 break;
 
-                case 'edit';
+                case 'edit_post';
                 include "includes/edit_post.php";
                 break;
             

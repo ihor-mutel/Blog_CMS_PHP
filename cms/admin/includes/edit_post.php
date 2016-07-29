@@ -1,4 +1,23 @@
-<form action="" method="post" enctype="multipart/form-data">
+<?php
+    $query = "SELECT * FROM posts"; //you could limit it using "LIMIT"
+    $select_posts = mysqli_query($connection,$query);    
+
+
+    while ($row =  mysqli_fetch_assoc($select_posts)){
+    $post_id = $row['post_id']; // cat_id equals to a field in a database
+    $post_author = $row['post_author'];
+    $post_title = $row['post_title'];   
+    $post_category_id = $row['post_category_id'];   
+    $post_status = $row['post_status'];   
+    $post_image = $row['post_image'];   
+    $post_tags = $row['post_tags'];   
+    $post_comment_count = $row['post_comment_count'];
+    $post_date = $row['post_date'];
+    }
+?>
+
+   
+   <form action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="title">Post Title</label>
         <input type="text" class="form-control" name="title">
